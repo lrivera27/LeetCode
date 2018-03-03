@@ -6,7 +6,6 @@
 
         P.S: Problem description copied from: https://leetcode.com/problems/hamming-distance/description/
 """
-
 class Solution:
     def hammingDistance(self, x, y):
         x = list("{0:b}".format(x))
