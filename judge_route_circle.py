@@ -10,8 +10,15 @@
 """
 class Solution:
     def judgeCircle(self, moves):
-        """
-        :type moves: str
-        :rtype: bool
-        """
-        
+        position = 0
+        for move in list(moves):
+            if move == "U":
+                position += 1
+            elif move == "D":
+                position -= 1
+            elif move == "L":
+                position += 2
+            elif move == "R":
+                position -= 2
+        if position == 0: return True
+        else: return False
