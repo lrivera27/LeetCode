@@ -19,13 +19,3 @@ class Solution:
             if(first != second):
                 counter += 1
         return counter
-
-
-test = Solution()
-print(test.hammingDistance(6, 11))
-
-
-
-#   list x => 0 1 1 0
-#   list y => 1 0 1 1
-#   x - y = 3 =? 3 zeroes need to be added
